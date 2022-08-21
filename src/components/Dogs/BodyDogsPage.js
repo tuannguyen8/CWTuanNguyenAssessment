@@ -93,8 +93,11 @@ const BodyDogsPage = () => {
 						}
 					</ul>
 				</div>
-
-				<button className="fetch-btn">Fetch</button>
+				
+				<div className='div-fetch-btn'>
+					<button className="fetch-btn">Fetch</button>
+				</div>
+				
 			</div>
 			<div>
 				<ReactPaginate

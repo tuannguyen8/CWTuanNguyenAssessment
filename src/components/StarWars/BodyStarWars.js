@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import starwars from '../../APIs/starwars';
 import { Button } from 'antd';
 import { HeartOutlined } from '@ant-design/icons';
+import $ from 'jquery';
 
 const BodyStarWars = () => {
 	const [characters, setCharacters] = useState([]);
@@ -45,10 +46,8 @@ const BodyStarWars = () => {
 				}
 			});
 			setCharacters(response);
-
 		} else {
 			starwars.getPeople().then((response) => {
-
 				//sort data by the name of characters
 				response.sort((a, b) => {
 					if (a.name > b.name) {
@@ -106,10 +105,20 @@ const BodyStarWars = () => {
 	//delete an character
 	const handleClickDelete = (index) => {
 		//alert(index);
-		setCharacters([
-			...characters.slice(0, index),
-			...characters.slice(index + 1),
-		]);
+		console.log("I'm teting", characters[index].status);
+		if (characters[index].status === true) {
+			if (window.confirm('Do you really want to delete your favorite characters?') === true) {
+				setCharacters([
+					...characters.slice(0, index),
+					...characters.slice(index + 1),
+				]);
+			}
+		} else {
+			setCharacters([
+				...characters.slice(0, index),
+				...characters.slice(index + 1),
+			]);
+		}
 	};
 
 	//change the status of a object when user click the heart icon
@@ -137,6 +146,22 @@ const BodyStarWars = () => {
 		}
 	};
 
+	//shake the cart when click the add to cart button
+
+	$('.sort-btn').on('click', function (e) {
+		setTimeout(function () {
+			$('.sort-btn').addClass('animate__animated animate__headShake');
+		}, 500);
+		$('.sort-btn').removeClass('animate__animated animate__headShake');
+	});
+
+	$('.reset-btn').on('click', function (e) {
+		setTimeout(function () {
+			$('.reset-btn').addClass('animate__animated animate__headShake');
+		}, 500);
+		$('.reset-btn').removeClass('animate__animated animate__headShake');
+	});
+
 	return (
 		<div className="div-bodyStarwars-contents">
 			<div className="search-bar">
@@ -146,8 +171,14 @@ const BodyStarWars = () => {
 				</form>
 			</div>
 			<div className="functional-btn">
-				<Button onClick={handleSortData}> Click to Sort Characters </Button>
-				<Button onClick={handleResetData}> Click to Reset Characters </Button>
+				<Button className="sort-btn" onClick={handleSortData}>
+					{' '}
+					Click to Sort Characters{' '}
+				</Button>
+				<Button className="reset-btn" onClick={handleResetData}>
+					{' '}
+					Click to Reset Characters{' '}
+				</Button>
 			</div>
 
 			<div className="render-characters">
