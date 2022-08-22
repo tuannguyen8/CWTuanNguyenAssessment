@@ -112,8 +112,6 @@ const BodyDogsPage = () => {
 					pageCount={pageCount}
 					onPageChange={changePage}
 					containerClassName={'paginationBttns'}
-					previousLinkClassName={'previousBttn'}
-					nextLinkClassName={'nextBttn'}
 					activeClassName={'paginationActice'}
 				/>
 			</div>
