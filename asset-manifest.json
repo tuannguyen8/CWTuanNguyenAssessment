@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3ba23f27.css",
-    "main.js": "/static/js/main.b5e70f62.js",
+    "main.js": "/static/js/main.bb14f33f.js",
     "static/js/787.5de1accf.chunk.js": "/static/js/787.5de1accf.chunk.js",
     "static/media/background-home-page-1.jpg": "/static/media/background-home-page-1.26d05696685ec0f9bd7e.jpg",
     "static/media/letter1.PNG": "/static/media/letter1.b880c566f17bc49f3566.PNG",
@@ -12,14 +12,13 @@
     "static/media/letter5.PNG": "/static/media/letter5.6769acf7a36d33051dde.PNG",
     "static/media/letter2.PNG": "/static/media/letter2.6e28d7f5ee19e9b7678a.PNG",
     "static/media/background-starwars-2.jpg": "/static/media/background-starwars-2.1c45986d0d3b4f31ba6e.jpg",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.3ba23f27.css.map": "/static/css/main.3ba23f27.css.map",
-    "main.b5e70f62.js.map": "/static/js/main.b5e70f62.js.map",
+    "main.bb14f33f.js.map": "/static/js/main.bb14f33f.js.map",
     "787.5de1accf.chunk.js.map": "/static/js/787.5de1accf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ba23f27.css",
-    "static/js/main.b5e70f62.js"
+    "static/js/main.bb14f33f.js"
   ]
 }
