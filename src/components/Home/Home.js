@@ -13,8 +13,20 @@ import 'animate.css';
 
 const Home = () => {
 	const navigate = useNavigate();
+	///////////////////////////////////////////////////////////////////////////////
+	
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
 	return (
-		<div className="home-container">
+		<div id="container" className="home-container">
 			<div className="div-content">
 				<h1 className='animate__slow animate__animated animate__backInDown'>WELCOME TO HOME PAGE</h1>
 				<div className="div-home-btn">

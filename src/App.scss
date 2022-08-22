@@ -48,6 +48,17 @@ button{
         h1{
             font-weight: 900;
             color: #b71540;
+            text-align: center;
+            @media screen and (max-width: 1024px){
+                font-size: 20px;
+            }
+
+            @media screen and (max-width: 768px){
+				font-size: 20px;
+			}
+            @media screen and (max-width: 737px){
+				font-size: 16px;
+			}
         }
         .div-home-btn{
            
@@ -55,6 +66,36 @@ button{
                 //animation: slide-from-right-animation 1s ease-in forwards;
                 width: 150px;
                 height: 50px;
+                margin: 10px;
+                //margin-left: 20px;
+                font-weight: 700;
+                border-radius: 15px;
+                border-color: #e58e26;
+                &:hover{
+                    background-color: #e58e26;
+                    border-color: #e58e26;
+                    color:#b71540;
+                }
+                @media screen and (min-width: 1024px){
+					margin-left: 20px;
+				}
+                @media screen and (max-width: 768px){
+					width: 250px;
+				}
+                @media screen and (max-width: 888px){
+					width: 100%;
+				}
+                @media screen and (max-width: 737px){
+                    margin: 0px;
+                    margin-bottom: 10px;
+                }
+                
+            }
+            .home-btn-2{
+                //animation: slide-from-right-animation 1s ease-in forwards;
+                width: 150px;
+                height: 50px;
+                //margin-left: 20px;
                 margin: 10px;
                 font-weight: 700;
                 border-radius: 15px;
@@ -64,19 +105,17 @@ button{
                     border-color: #e58e26;
                     color:#b71540;
                 }
-            }
-            .home-btn-2{
-                //animation: slide-from-right-animation 1s ease-in forwards;
-                width: 150px;
-                height: 50px;
-                margin: 10px;
-                font-weight: 700;
-                border-radius: 15px;
-                border-color: #e58e26;
-                &:hover{
-                    background-color: #e58e26;
-                    border-color: #e58e26;
-                    color:#b71540;
+                @media screen and (min-width: 1024px){
+					margin-left: 20px;
+				}
+                @media screen and (max-width: 768px){
+					width: 250px;
+				}
+                @media screen and (max-width: 888px){
+					width: 100%;
+				}
+                @media screen and (max-width: 737px){
+                    margin: 0px;
                 }
             }
         }
@@ -91,11 +130,26 @@ button{
         bottom: 1%;
         left: 50%;
         transform: translate(-50%, 0%);
+        @media screen and (max-width: 768px){
+            margin-bottom: 30px;
+		}
+        @media screen and (max-width: 580px){
+            margin-bottom: 100px;
+		}
         .welcome{
             margin: 5px;
-            height: 300px;
+            height: 250px;
             &:hover{
                 animation: call-animation;
+            }
+            @media screen and (max-width: 768px){
+                height: 200px;
+			}
+            @media screen and (max-width: 1024px){
+                height: 200px;
+            }
+            @media screen and (max-width: 580px){
+                height: 80px;
             }
         }
 
@@ -486,3 +540,5 @@ button{
 
 @keyframes shakecall-animation{
 } 
+
+/////////////////////////////////////////////////////////
