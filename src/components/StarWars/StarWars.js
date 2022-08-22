@@ -6,8 +6,9 @@ const StarWars = () => {
 	const navigate = useNavigate();
 	return (
 		<div className="starwars-container">
+
 			<div className="starwars-navigate">
-				<div className='nav-bounder'>
+				<div className="nav-bounder">
 					<div className="nav-div-title">
 						<h1> Star Wars Characters</h1>
 					</div>

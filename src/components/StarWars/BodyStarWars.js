@@ -146,7 +146,7 @@ const BodyStarWars = () => {
 		}
 	};
 
-	//shake the cart when click the add to cart button
+	//shake the button when click the add to cart button
 
 	$('.sort-btn').on('click', function (e) {
 		setTimeout(function () {

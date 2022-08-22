@@ -82,6 +82,7 @@ const BodyDogsPage = () => {
 	const changePage = ({ selected }) => {
 		setPageNumber(selected);
 	};
+
 	return (
 		<div className="dog-content">
 			<div className="input-group">
