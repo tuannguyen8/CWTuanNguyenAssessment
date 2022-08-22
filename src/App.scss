@@ -447,17 +447,12 @@ button{
                         margin-left: 5%;
                     }
                     .dog-breeds{
-                        /* width: 140px;
-                        background-color: #ccc;
-                        //color: white;
-                        height: 100%;
-                        display: flex;
-                        align-items: center; */
-                        //padding: 20px;
+                        
                         padding: 10px;
                         background-color: #ccc;
                         border-radius: 4px;
                         width: 300px;
+                        font-weight: 700;
                     }
                     ul{
                         background: white;
@@ -469,11 +464,10 @@ button{
                         z-index: 10;
                         display: none;
                         li{
+                            font-weight: 700;
                             padding: 10px;
                             font-size: 12px;
-                            //color: red;
                             transition: 0.4s;
-                            
                             cursor: pointer;
                             &:hover{ 
                                 background-color: #ccc;
@@ -498,9 +492,9 @@ button{
                     }
                 }
             }
-            div{
+            /* div{
                 //div of pagination
-            }
+            } */
             .dog-area {
                 width: 100%;
                 display: flex;
@@ -547,11 +541,9 @@ button{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100px;
         margin: 10px;
         background-color: #f6b93b;
         border-radius: 2px;
-        padding: 10px;
         &:hover{
             background-color: #1a91db;
             a{
@@ -560,6 +552,11 @@ button{
             }
         }
         a{
+            text-align: center;
+            display: block;
+            width: 100px;
+            padding: 10px;
+            
             font-weight: 700;
         }
         

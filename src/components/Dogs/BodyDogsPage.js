@@ -34,6 +34,7 @@ const BodyDogsPage = () => {
 
 	useEffect(() => {
 
+		//fetching all breeds of dogs
 		dogs.getAllBreeds().then((response) => {
 			//console.log('breeds', response);
 			//console.log('hello dogs');
@@ -62,13 +63,16 @@ const BodyDogsPage = () => {
 			//reset dog-area to remove all last images for the coming images
 			setDogPet([]);
 
-			const breed = $('.dog-breeds').text();
+			//get the value of breed
+			//original breed words are all lowercase, so need to lowercase string before fetching
+			const breed = $('.dog-breeds').text().toLowerCase();
 
+			//passing kind of breed to api_url, so to be able fetching data
 			//const api_url = `https://dog.ceo/api/breed/${breed}/images/random`;
 			const api_url = `https://dog.ceo/api/breed/${breed}/images`;
 			$.get(api_url, (data) => {
 				if (data.status === 'success') {
-					console.log('fetchfetchdata', data.message);
+					//console.log('fetchfetchdata', data.message);
 					setDogPet(data.message);
 				}
 			});
@@ -82,13 +86,15 @@ const BodyDogsPage = () => {
 		<div className="dog-content">
 			<div className="input-group">
 				<div className="dog-list">
-					<div className="dog-breeds">akita</div>
+					<div className="dog-breeds">Akita</div>
 					<ul className="list">
 						{
 							//console.log("current", Object.keys(breeds))
 							Object.keys(breeds).forEach((val) => {
-								//console.log("valval", val)
-								$('.list').append(`<li>${val}</li>`);
+								//capitalize the first letter of string
+								const capitalizeFirstLetter = val.charAt(0).toUpperCase() + val.slice(1);
+								//console.log("valval", capitalizeFirstLetter);
+								$('.list').append(`<li>${capitalizeFirstLetter}</li>`);
 							})
 						}
 					</ul>
