@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/CWTuanNguyenAssessment/static/css/main.af41829e.css",
+    "main.js": "/CWTuanNguyenAssessment/static/js/main.a9014777.js",
+    "static/js/787.5de1accf.chunk.js": "/CWTuanNguyenAssessment/static/js/787.5de1accf.chunk.js",
+    "static/media/background-home-page-1.jpg": "/CWTuanNguyenAssessment/static/media/background-home-page-1.26d05696685ec0f9bd7e.jpg",
+    "static/media/letter1.PNG": "/CWTuanNguyenAssessment/static/media/letter1.b880c566f17bc49f3566.PNG",
+    "static/media/letter3.PNG": "/CWTuanNguyenAssessment/static/media/letter3.b9cb2ae78cec494f0b25.PNG",
+    "static/media/letter6.PNG": "/CWTuanNguyenAssessment/static/media/letter6.ea6b1257b7a35470e0ad.PNG",
+    "static/media/letter4.PNG": "/CWTuanNguyenAssessment/static/media/letter4.99f20f77f9b1d6ac9ee7.PNG",
+    "static/media/letter7.PNG": "/CWTuanNguyenAssessment/static/media/letter7.8ba2ce8c0536b0d84461.PNG",
+    "static/media/letter5.PNG": "/CWTuanNguyenAssessment/static/media/letter5.6769acf7a36d33051dde.PNG",
+    "static/media/letter2.PNG": "/CWTuanNguyenAssessment/static/media/letter2.6e28d7f5ee19e9b7678a.PNG",
+    "static/media/background-starwars-2.jpg": "/CWTuanNguyenAssessment/static/media/background-starwars-2.1c45986d0d3b4f31ba6e.jpg",
+    "static/media/logo.svg": "/CWTuanNguyenAssessment/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/CWTuanNguyenAssessment/index.html",
+    "main.af41829e.css.map": "/CWTuanNguyenAssessment/static/css/main.af41829e.css.map",
+    "main.a9014777.js.map": "/CWTuanNguyenAssessment/static/js/main.a9014777.js.map",
+    "787.5de1accf.chunk.js.map": "/CWTuanNguyenAssessment/static/js/787.5de1accf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af41829e.css",
+    "static/js/main.a9014777.js"
+  ]
+}
