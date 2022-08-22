@@ -191,6 +191,16 @@ button{
                 font-weight: 700;
                 border-radius: 15px;
                 border: solid 1px #2980b9;
+                @media screen and (max-width: 786px){
+					width: 120px;
+                    font-size: 12px;
+				}
+                @media screen and (max-width: 710px){
+					margin-left: 220px;
+				}
+                @media screen and (max-width: 550px){
+					margin-left: 100px;
+				}
                 &:hover{
                     background-color: #f6b93b;
                     border-color: #f6b93b;
@@ -233,6 +243,12 @@ button{
                             opacity: 0.7;
                             
                         } */
+                        @media screen and (max-width: 1024px){
+                            width: 60%;
+                        }
+                        @media screen and (max-width: 414px){
+                            margin-right: 5px;
+                        }
                     }
                     button{
                         width: 25%;
@@ -248,6 +264,9 @@ button{
                             color: #b71540;
                             background-color: #f6b93b;
 
+                        }
+                        @media screen and (max-width: 414px){
+                            font-size: 16px;
                         }
                     }
                 }
@@ -272,6 +291,11 @@ button{
                         background-color: #e58e26;
                         border-color: #e58e26;
                         color:#b71540;
+                    }
+                    @media screen and (max-width: 414px){
+                        font-size: 12px;
+                        margin: 3px;
+                        padding: 0px;
                     }
                 }
                 
@@ -388,6 +412,16 @@ button{
                 font-weight: 700;
                 border-radius: 15px;
                 border: solid 1px #2980b9;
+                @media screen and (max-width: 786px){
+					width: 120px;
+                    font-size: 12px;
+				}
+                @media screen and (max-width: 710px){
+					margin-left: 220px;
+				}
+                @media screen and (max-width: 550px){
+					margin-left: 100px;
+				}
                 &:hover{
                     background-color: #f6b93b;
                     border-color: #f6b93b;
@@ -407,8 +441,11 @@ button{
                 //position: relative;
                 .dog-list{
                     position: relative;
-                    margin-left: 125px;
+                    margin-left: 10%;
                     margin-right: 5px;
+                    @media screen and (max-width: 570px){
+                        margin-left: 5%;
+                    }
                     .dog-breeds{
                         /* width: 140px;
                         background-color: #ccc;
